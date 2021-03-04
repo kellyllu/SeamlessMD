@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SeamlessMD Patient</title>
+</head>
+
+<body>
+	<h1>SeamlessMD Patient</h1>
+	<p id="test"></p>
+	<script id="jsbin-javascript">
+		var obj = '{ "name": "Henry Levin", "organization": "University Health Network", "gender" : "male", "numberOfConditions" : "3"}';
+
+   var arrayString = ""; 
+   var myArray = ["Diabetes","High blood pressure", "Asthma"];
+   for(var i = 0; i < myArray.length; i++){
+      arrayString = arrayString + "- " + myArray[i] + "<br>";
+   }
+
+   var text = JSON.parse(obj);
+
+   document.getElementById("test").innerHTML = "Name of patient: " + text.name + "<br>" + "Organization name: " + text.organization + "<br>" + "Gender: " + text.gender + "<br>" + "Number of conditions they have: " + text.numberOfConditions + "<br>" + "List of all conditions:" + "<br>" + arrayString;
+	</script>
+
+</html>
