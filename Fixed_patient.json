@@ -24,9 +24,7 @@
   "name": [
     {
       "family": "Levin",
-      "given": [
-        "Henry"
-      ]
+      "given": "Henry"
     }
   ],
   "gender": "male",
